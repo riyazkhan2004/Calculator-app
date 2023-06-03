@@ -27155,16 +27155,26 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _header = require("../components/header/header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
+var _calculator = require("../components/calculator/calculator");
+var _calculatorDefault = parcelHelpers.interopDefault(_calculator);
+var _indexCss = require("./index.css");
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "Hello world!"
-        }, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 3,
-            columnNumber: 14
-        }, this)
-    }, void 0, false);
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 7,
+                columnNumber: 4
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _calculatorDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 8,
+                columnNumber: 4
+            }, this)
+        ]
+    }, void 0, true);
 }
 _c = App;
 var _c;
@@ -27175,7 +27185,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../components/header/header":"HkB1m","./index.css":"irmnC","../components/calculator/calculator":"2h2N0"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27343,6 +27353,247 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}]},["i1eet","1xC6H","8lqZg"], "8lqZg", "parcelRequire7495")
+},{"7422ead32dcc1e6b":"786KC"}],"HkB1m":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d1aa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d1aa.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const header = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "grid",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container bg-teal-500 rounded-xl  w-1/3 justify-self-center",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "text-center text-6xl font-semibold p-10",
+                children: "CALCULATOR"
+            }, void 0, false, {
+                fileName: "components/header/header.jsx",
+                lineNumber: 5,
+                columnNumber: 17
+            }, undefined)
+        }, void 0, false, {
+            fileName: "components/header/header.jsx",
+            lineNumber: 4,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "components/header/header.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+exports.default = header;
+
+  $parcel$ReactRefreshHelpers$d1aa.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"irmnC":[function() {},{}],"2h2N0":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$161a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$161a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Button = (props)=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+        className: "text-8xl p-10 m-4 rounded-xl bg-slate-50",
+        type: "button",
+        value: props.label
+    }, void 0, false, {
+        fileName: "components/calculator/calculator.jsx",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Button;
+const Calculator = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "grid",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    className: "border-4 container bg-white rounded-xl  w-1/3 h-16 m-2 justify-self-center",
+                    type: "text",
+                    id: "in",
+                    readOnly: true
+                }, void 0, false, {
+                    fileName: "components/calculator/calculator.jsx",
+                    lineNumber: 15,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "components/calculator/calculator.jsx",
+                lineNumber: 14,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex justify-evenly",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-rows-4 grid-cols-5 grid-flow-col gap-px rounded-xl bg-rose-500 opacity-40 h-13 w-1/3 m-1 ",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "C"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 19,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "D"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 20,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "."
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 21,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "/"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 22,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "1"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 23,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "4"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 24,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "7"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 25,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "*"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 26,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "2"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 27,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "5"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 28,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "8"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 29,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "-"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 30,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "3"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 31,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "6"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 32,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "9"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 33,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "+"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 34,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "0"
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 35,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Button, {
+                            label: "="
+                        }, void 0, false, {
+                            fileName: "components/calculator/calculator.jsx",
+                            lineNumber: 36,
+                            columnNumber: 17
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "components/calculator/calculator.jsx",
+                    lineNumber: 18,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "components/calculator/calculator.jsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c1 = Calculator;
+exports.default = Calculator;
+var _c, _c1;
+$RefreshReg$(_c, "Button");
+$RefreshReg$(_c1, "Calculator");
+
+  $parcel$ReactRefreshHelpers$161a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["i1eet","1xC6H","8lqZg"], "8lqZg", "parcelRequire7495")
 
 //# sourceMappingURL=index.5f6cb356.js.map
